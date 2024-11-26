@@ -1,0 +1,216 @@
+/*
+****** FORMATAÇÕES GERAIS ******
+*/
+*{ margin: 0; padding: 0; }
+
+body{
+    margin: 0;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 3px #ffff;
+}
+
+/*
+****** HEADER ******
+*/
+header{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+header img{
+    width: 35px;
+}
+
+/*
+****** NAV ******
+*/
+nav{
+    border-bottom: 0.5px solid grey;
+    font-size: 16px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+}
+
+.menu li{
+    position: relative;
+    float: left;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu li a:hover{
+    background: black;
+    color:rgb(228, 219, 207);
+    -moz-box: 0 3px 10px 0 #CCC;
+    -webkit-box: 0 3px 10px 0 #CCC;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul{
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background-color: black;
+    display: none;
+}
+
+.menu li:hover ul, .menu li.over ul{display: block;}
+
+.menu li ul li{
+    display: block;
+    width: 150px;
+    padding: 20px;
+}
+
+/*
+****** PRINCIPAL ******
+*/
+main{
+    width: 1000px;
+    float: right;
+    padding-right: 50px;
+    margin-bottom: 60px;
+}
+
+.post{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    background-color: rgba(105, 105, 105, 0.11);
+    border: 0;
+    border-radius: 5%;
+    padding: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px white;
+}
+
+.mapa{
+    text-align: center;
+}
+
+/*
+****** GALERIA ******
+*/
+#galeria > div{
+    float: left;
+    padding: 10px;
+}
+
+.foto img{
+    width: 100%;
+}
+
+.detalhes{
+    display: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+
+.foto:target{
+    position: fixed;
+    transform: scale(1.4);
+    transition: .3s;
+    top: 100px;
+    left: 25%;
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#galeria .foto:target .detalhes{
+    display: block;
+}
+
+/*
+****** LEFT SIDE ******
+*/
+aside{
+    width: 280px;
+    float: left;
+}
+
+.content-left{
+    padding: 30px;
+    margin-bottom: 1px;
+}
+
+/*
+****** IMG ******
+*/
+.img_home{
+    padding-right: 15px;
+    width: 400px;
+}
+
+.img_regioes{
+   margin-right: 15px;
+   width: 400px;
+   box-shadow: 0 0 10px white;
+}
+
+.img_galeria{
+    width: 630px;
+    height: 360px;
+    display: flex;
+    padding-left: 5px;
+}
+
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: gray;
+    text-align: center;
+    padding-bottom: 10px; 
+}
+
+/*
+****** FORMATAÇÃO LINKS ******
+*/
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: rgb(236, 178, 178);
+    padding: 5px;
+}
+
+a:hover{
+    color: rgb(228, 219, 207);
+    text-decoration: none;
+    -moz-box: 0 3px 10px 0 #CCC;
+    -webkit-box: 0 3px 10px 0 #CCC;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/*
+****** FOTTER ******
+*/
+footer{
+    clear: both;
+    background-color: rgba(105, 105, 105, 0.11);
+    color: dimgray;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
